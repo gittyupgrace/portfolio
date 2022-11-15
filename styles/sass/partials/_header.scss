@@ -1,0 +1,19 @@
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    .headerContent {
+        position: relative;
+
+        ul {
+            position: absolute;
+            top: -150px;
+            right: 200px;
+
+            .emailLink {
+                text-align: right;
+            }
+        }
+    }
+}
