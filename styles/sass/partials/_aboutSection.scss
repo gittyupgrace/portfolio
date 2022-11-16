@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+
+    div {
+        width: calc(50% - 40px);
+    }
+
+    .aboutImage {
+        margin-right: 20px;
+    }
+
+    .aboutContent {
+        margin-left: 20px;
+    }
+}

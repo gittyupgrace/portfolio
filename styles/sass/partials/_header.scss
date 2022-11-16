@@ -2,13 +2,17 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    background-image: url(../assets/headerImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
     .headerContent {
         position: relative;
 
         ul {
             position: absolute;
-            top: -150px;
+            top: -40px;
             right: 200px;
 
             .emailLink {

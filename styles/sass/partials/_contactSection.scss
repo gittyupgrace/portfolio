@@ -1,0 +1,27 @@
+.contact {
+    .contactContainer {
+        display: flex;
+    
+        div {
+            width: calc(50% - 40px);
+        }
+    
+        .contactInfo {
+            margin-right: 20px;
+
+            ul {
+                display: flex;
+                
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+    
+        .contactForm {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -2,7 +2,11 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     ul {
         display: flex;
         align-items: center;

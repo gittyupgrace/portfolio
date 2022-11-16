@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+section {
+  padding-top: 100px;
+}
+
 img {
   width: 100%;
   display: block;
@@ -266,6 +270,11 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: transparent;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 nav ul {
   display: -webkit-box;
@@ -287,15 +296,95 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../assets/headerImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 header .headerContent {
   position: relative;
 }
 header .headerContent ul {
   position: absolute;
-  top: -150px;
+  top: -40px;
   right: 200px;
 }
 header .headerContent ul .emailLink {
   text-align: right;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about div {
+  width: calc(50% - 40px);
+}
+.about .aboutImage {
+  margin-right: 20px;
+}
+.about .aboutContent {
+  margin-left: 20px;
+}
+
+.work .projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.work .projectContainer div {
+  width: calc(50% - 40px);
+}
+.work .projectContainer .projectImage {
+  margin-right: 20px;
+}
+.work .projectContainer .projectContent {
+  margin-left: 20px;
+}
+.work .projectContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.work .projectContainer ul li {
+  margin-right: 10px;
+}
+
+.contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contactContainer div {
+  width: calc(50% - 40px);
+}
+.contact .contactContainer .contactInfo {
+  margin-right: 20px;
+}
+.contact .contactContainer .contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contactContainer .contactInfo ul li {
+  margin-right: 10px;
+}
+.contact .contactContainer .contactForm {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+footer p {
+  text-align: center;
 }

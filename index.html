@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grace m.</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/d1b50708a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="wrapper">
@@ -20,7 +21,7 @@
     </nav>
 
     <header>
-        <div class="wrapper headerContent">
+        <div class="headerContent wrapper">
             <ul>
                 <li><h2>Hi, I'm Grace</h2></li>
                 <li><h3>A front-end web developer</h3></li>
@@ -30,11 +31,11 @@
     </header>
 
     <main>
-        <section class="about" id="about">
-            <div>
-                <img src="" alt="">
+        <section class="about wrapper" id="about">
+            <div class="aboutImage">
+                <img src="./assets/aboutImage.png" alt="">
             </div>
-            <div>
+            <div class="aboutContent">
                 <h4>About</h4>
                 <p>Hello! My name is Grace and I'm a front-end developer with a love for visually absorbing design that also offers
                 functionality.</p>
@@ -44,31 +45,18 @@
             </div>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills wrapper" id="skills">
             <h4>Skills</h4>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <ul></ul>
         </section>
 
-        <section class="work" id="work">
+        <section class="work wrapper" id="work">
             <h4>Work</h4>
-            <div>
-                <div>
+            <div class="projectContainer">
+                <div class="projectImage">
                     <img src="" alt="" class="projectImage">
                 </div>
-                <div>
+                <div class="projectContent">
                     <h5>Project title</h5>
                     <ul>
                         <li>Tool</li>
@@ -84,19 +72,19 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact wrapper" id="contact">
             <h4>Contact</h4>
-            <div>
-                <div>
+            <div class="contactContainer">
+                <div class="contactInfo">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptates, illo perspiciatis adipisci quam repudiandae asperiores in aut soluta reiciendis.</p>
                     <a href="mailto: gittyupgrace@gmail.com">gittyupgrace@gmail.com</a>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><a href="https://twitter.com/gittyupgrace"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/gittyupgrace"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/grace-mccaffrey-39070b244/"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="contactForm">
                     <form action="#" method="POST" class="contactForm" name="contactForm">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" class="name" placeholder="Name">
@@ -114,7 +102,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="wrapper">
         <p>Made by <a href="https://github.com/gittyupgrace">gittyupgrace</a> at <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
 </body>
