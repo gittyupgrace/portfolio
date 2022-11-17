@@ -1,0 +1,107 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+h1,  
+h4, 
+h5, 
+button,  
+footer {
+    font-family: $primaryFont;
+    text-transform: lowercase;
+}
+
+h3, 
+nav ul, 
+.projectContent li, 
+::placeholder {
+    text-transform: uppercase;
+}
+
+nav {
+    h1 {
+        @include fontSize(48);
+    }
+
+    ul {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+
+header {
+    color: $headerText;
+
+    h2 {
+        @include fontSize(80);
+        font-weight: normal;
+        margin-bottom: 0;
+        text-transform: lowercase;
+        font-family: $primaryFont;
+        letter-spacing: -2px;
+    }
+
+    h3 {
+        @include fontSize(18);
+        letter-spacing: 2px;
+        margin-top: 3px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    a {
+        @include fontSize(20);
+        color: $bodyText;
+        font-style: italic;
+        background-color: $primaryAccent;
+    }
+}
+
+h4 {
+    @include fontSize(45);
+    margin-bottom: 40px;
+}
+
+h5 {
+    @include fontSize(35);
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 28px;
+}
+
+.projectContent {
+    li {
+        @include fontSize(16);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+}
+
+.contact {
+    i {
+        @include fontSize(32);
+    }
+}
+
+::placeholder {
+    color: $bodyText;
+    font-weight: bold;
+    opacity: 0.8;
+    @include fontSize(16);
+}
+
+button {
+    font-weight: bold;
+    color: $bodyText;
+    @include fontSize(25);
+}

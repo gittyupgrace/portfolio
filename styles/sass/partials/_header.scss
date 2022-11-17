@@ -4,18 +4,25 @@ header {
     align-items: center;
     background-image: url(../assets/headerImage.jpg);
     background-size: cover;
-    background-position: center right;
+    background-position: right;
     
     .headerContent {
         position: relative;
 
         ul {
             position: absolute;
-            top: -40px;
-            right: 200px;
+            top: -130px;
+            right: 160px;
 
             .emailLink {
                 text-align: right;
+            }
+
+            a {
+                background-color: $primaryAccent;
+                padding: 20px 20px 5px 20px;
+                border-radius: 500px 500px 0 0;
+                margin-top: 10px;
             }
         }
     }
