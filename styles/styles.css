@@ -236,7 +236,7 @@ html {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 img {
@@ -260,6 +260,11 @@ ul {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto;
+}
+
+body {
+  color: #075cfb;
+  background-color: #f9f1ef;
 }
 
 nav {
@@ -298,8 +303,7 @@ header {
           align-items: center;
   background-image: url(../assets/headerImage.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
 }
 header .headerContent {
   position: relative;
@@ -323,6 +327,9 @@ header .headerContent ul .emailLink {
 }
 .about .aboutImage {
   margin-right: 20px;
+}
+.about .aboutImage img {
+  border-radius: 500px 500px 0 0;
 }
 .about .aboutContent {
   margin-left: 20px;

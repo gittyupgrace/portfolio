@@ -1,14 +1,14 @@
 //General Overall Site Styles
-@import './setup';
-@import './baseStyles';
-@import './variables';
-@import './typography';
-@import './navBar';
+@import '../partials/setup';
+@import '../partials/variables';
+@import '../partials/baseStyles';
+@import '../partials/typography';
+@import '../partials/navBar';
 
 //Section Styles
-@import './header';
-@import './aboutSection';
-@import './skillsSection';
-@import './workSection';
-@import './contactSection';
-@import './footer';
+@import '../partials/header';
+@import '../partials/aboutSection';
+@import '../partials/skillsSection';
+@import '../partials/workSection';
+@import '../partials/contactSection';
+@import '../partials/footer';
