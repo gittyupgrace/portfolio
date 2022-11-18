@@ -1,3 +1,28 @@
+body {
+    color: $bodyText;
+    background-color: $bodyBackground;
+}
+
+.skipLink {
+    background-color: $primaryAccent;
+    color: $bodyText;
+    font-family: $bodyFont;
+    @include fontSize(20);
+    text-transform: lowercase;
+    text-decoration: underline;
+    padding: 20px 0;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    z-index: 999;
+
+    &:focus {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
 section {
     padding-top: 150px;
 }
@@ -23,9 +48,4 @@ ul {
     max-width: 1280px;
     width: 80%;
     margin: 0 auto;
-}
-
-body {
-    color: $bodyText;
-    background-color: $bodyBackground;
 }

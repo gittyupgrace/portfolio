@@ -57,6 +57,7 @@ header {
         @include fontSize(20);
         color: $bodyText;
         font-style: italic;
+        font-weight: bold;
         background-color: $primaryAccent;
     }
 }
