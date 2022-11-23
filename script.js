@@ -42,23 +42,29 @@ app.skills = [
     },
 ];
 
+app.displaySkills = () => {
+    app.skillsList = document.getElementById('skillsList');
 
+    app.skills.forEach((skill) => {
+        const skillsListItem = document.createElement('li');
 
-app.skillsList = document.getElementById('skillsList');
+        const skillsIcon = document.createElement('i');
 
-app.skills.forEach( (skill) => {
-    const skillsListItem = document.createElement('li');
+        const iconClassArray = skill.icon;
+        iconClassArray.forEach((iconClass) => {
+            skillsIcon.classList.add('icon');
+            skillsIcon.classList.add(iconClass);
+            console.log(skillsIcon)
+        });
 
-    const skillsIcon = document.createElement('i');
-
-    const iconClassArray = skill.icon;
-    iconClassArray.forEach( (iconClass) => {
-        skillsIcon.classList.add(iconClass);
-        console.log(skillsIcon)
+        skillsListItem.textContent = skill.name;
+        skillsListItem.append(skillsIcon);
+        skillsList.append(skillsListItem);
     });
+};
 
-    skillsListItem.textContent = skill.name;
-    skillsListItem.append(skillsIcon);
-    skillsList.append(skillsListItem);
-});
+app.init = () => {
+    app.displaySkills();
+}
 
+app.init();

@@ -1,0 +1,17 @@
+.skillsList {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    li {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 10em;
+        text-align: center;
+        padding: 20px;
+
+        .icon {
+            @include fontSize(60);
+        }
+    }
+}

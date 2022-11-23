@@ -538,6 +538,33 @@ header .headerContent ul a {
   margin-left: 30px;
 }
 
+.skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skillsList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 10em;
+  text-align: center;
+  padding: 20px;
+}
+.skillsList li .icon {
+  font-size: 60px;
+  font-size: 3rem;
+}
+
 .work .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
