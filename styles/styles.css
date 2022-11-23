@@ -273,6 +273,7 @@ a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
+  padding: 10px;
 }
 
 ul {
@@ -330,6 +331,8 @@ nav ul,
 nav h1 {
   font-size: 48px;
   font-size: 2.4rem;
+  margin-top: 75px;
+  margin-bottom: 10px;
 }
 nav ul {
   font-weight: bold;
@@ -340,17 +343,16 @@ header {
   color: #ffffff;
 }
 header h2 {
-  font-size: 80px;
-  font-size: 4rem;
-  font-weight: normal;
+  font-size: 82px;
+  font-size: 4.1rem;
   margin-bottom: 0;
-  text-transform: lowercase;
-  font-family: "Gaegu", cursive;
-  letter-spacing: -2px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 header h3 {
-  font-size: 18px;
-  font-size: 0.9rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   margin-top: 3px;
   text-transform: uppercase;
@@ -399,41 +401,52 @@ p {
 ::-webkit-input-placeholder {
   color: #0348C9;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 16px;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 ::-moz-placeholder {
   color: #0348C9;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 16px;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 :-ms-input-placeholder {
   color: #0348C9;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 16px;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 ::-ms-input-placeholder {
   color: #0348C9;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 16px;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 ::placeholder {
   color: #0348C9;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 16px;
   font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  color: #0348C9;
 }
 
 button {
@@ -444,29 +457,34 @@ button {
 }
 
 nav {
+  background-color: #FCF8F8;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: transparent;
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
-nav ul {
+nav .navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-nav ul li {
+nav .navBar ul li {
   margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 header {
@@ -488,7 +506,7 @@ header .headerContent {
 header .headerContent ul {
   position: absolute;
   top: -130px;
-  right: 160px;
+  right: 70px;
 }
 header .headerContent ul .emailLink {
   text-align: right;
@@ -542,8 +560,8 @@ header .headerContent ul a {
 .work .projectContainer ul li {
   margin-right: 10px;
 }
-.work .projectContainer ul li a {
-  padding: 20px 20px 20px 0;
+.work .projectContainer ul a {
+  padding: 5px;
   background-color: #f0fd71;
 }
 
@@ -573,6 +591,12 @@ header .headerContent ul a {
 }
 .contact .contactContainer .contactForm {
   margin-left: 20px;
+  background-image: url(../assets/contactImage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact .contactContainer form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,13 +604,25 @@ header .headerContent ul a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../assets/contactImage.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.contact .contactContainer .contactForm form {
   opacity: 0.7;
   width: 100%;
+  -webkit-box-shadow: 2px 2px 2px #0348C9;
+          box-shadow: 2px 2px 2px #0348C9;
+}
+.contact .contactContainer form input,
+.contact .contactContainer form textarea,
+.contact .contactContainer form .submit {
+  border: none;
+  padding: 15px;
+}
+.contact .contactContainer form input {
+  border-bottom: 2px solid #0348C9;
+}
+.contact .contactContainer form textarea {
+  resize: none;
+}
+.contact .contactContainer form .submit {
+  border-top: 2px dotted #0348C9;
 }
 
 footer {

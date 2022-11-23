@@ -25,6 +25,8 @@ nav ul,
 nav {
     h1 {
         @include fontSize(48);
+        margin-top: 75px;
+        margin-bottom: 10px;
     }
 
     ul {
@@ -37,16 +39,15 @@ header {
     color: $headerText;
 
     h2 {
-        @include fontSize(80);
-        font-weight: normal;
+        @include fontSize(82);
         margin-bottom: 0;
-        text-transform: lowercase;
-        font-family: $primaryFont;
-        letter-spacing: -2px;
+        font-family: $bodyFont;
+        font-weight: normal;
+        letter-spacing: 1px;
     }
 
     h3 {
-        @include fontSize(18);
+        @include fontSize(30);
         letter-spacing: 2px;
         margin-top: 3px;
         text-transform: uppercase;
@@ -97,8 +98,15 @@ p {
 ::placeholder {
     color: $bodyText;
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 1;
     @include fontSize(16);
+    letter-spacing: 1px;
+}
+
+input, 
+textarea {
+    font-family: $bodyFont;
+    color: $bodyText;
 }
 
 button {

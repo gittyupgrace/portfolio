@@ -14,15 +14,17 @@
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
-    <nav class="wrapper">
-        <h1>Grace M.</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="navBar wrapper">
+            <h1>Grace M.</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <header>
@@ -52,7 +54,7 @@
 
         <section class="skills wrapper" id="skills">
             <h4>Skills</h4>
-            <ul></ul>
+            <ul id="skillsList"></ul>
         </section>
 
         <section class="work wrapper" id="work">
@@ -90,7 +92,7 @@
                     </ul>
                 </div>
                 <div class="contactForm">
-                    <form action="#" method="POST" class="contactForm" name="contactForm">
+                    <form action="#" method="POST" class="form" name="form">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" class="name" placeholder="Name">
                         
@@ -110,5 +112,7 @@
     <footer class="wrapper">
         <p>Made by <a href="https://github.com/gittyupgrace">gittyupgrace</a> at <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
