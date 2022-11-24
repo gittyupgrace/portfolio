@@ -351,8 +351,8 @@ header h2 {
   letter-spacing: 1px;
 }
 header h3 {
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   margin-top: 3px;
   text-transform: uppercase;
@@ -457,7 +457,7 @@ button {
 }
 
 nav {
-  background-color: #FCF8F8;
+  background-color: rgba(252, 248, 248, 0.5);
   position: fixed;
   top: 0;
   left: 50%;
@@ -486,6 +486,12 @@ nav .navBar ul li {
   margin-left: 25px;
   margin-bottom: 10px;
 }
+nav .contactLink a {
+  background-color: #f0fd71;
+  padding: 20px 20px 10px 20px;
+  border-radius: 500px 500px 0 0;
+  margin-top: 10px;
+}
 
 header {
   min-height: 100vh;
@@ -507,15 +513,6 @@ header .headerContent ul {
   position: absolute;
   top: -130px;
   right: 70px;
-}
-header .headerContent ul .emailLink {
-  text-align: right;
-}
-header .headerContent ul a {
-  background-color: #f0fd71;
-  padding: 20px 20px 10px 20px;
-  border-radius: 500px 500px 0 0;
-  margin-top: 10px;
 }
 
 .about {

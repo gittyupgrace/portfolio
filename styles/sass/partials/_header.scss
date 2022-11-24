@@ -14,17 +14,6 @@ header {
             position: absolute;
             top: -130px;
             right: 70px;
-
-            .emailLink {
-                text-align: right;
-            }
-
-            a {
-                background-color: $primaryAccent;
-                padding: 20px 20px 10px 20px;
-                border-radius: 500px 500px 0 0;
-                margin-top: 10px;
-            }
         }
     }
 }
