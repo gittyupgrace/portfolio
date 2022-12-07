@@ -39,11 +39,11 @@
     <main id="mainContent">
         <section class="about wrapper" id="about">
             <div class="aboutImage">
-                <img src="./assets/aboutImage.jpg" alt="">
+                <img src="./assets/aboutImage.jpg" alt="A photo of Grace standing in the narrow doorway of her cute a-frame trailer.">
             </div>
             <div class="aboutContent">
                 <h4>About</h4>
-                <p>Hello! My name is Grace and I'm a front-end developer with a love for visually absorbing design that also offers
+                <p>Hello! My name is Grace McCaffrey and I'm a front-end developer with a love for visually absorbing design that also offers
                 functionality.</p>
                 <p>I am curious, analytical, and people-oriented and love experiences that are tactile and immersive. I
                 strive to bring these qualities into my development to create websites that provide an accessible, engaging, and
@@ -51,9 +51,11 @@
             </div>
         </section>
 
-        <section class="skills wrapper" id="skills">
-            <h4>Skills</h4>
-            <ul class="skillsList "id="skillsList"></ul>
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <h4>Skills</h4>
+                <ul class="skillsList "id="skillsList"></ul>
+            </div>
         </section>
 
         <section class="work wrapper" id="work">
@@ -61,38 +63,42 @@
             <ul id="projectList"></ul>
         </section>
 
-        <section class="contact wrapper" id="contact">
-            <h4>Contact</h4>
-            <div class="contactContainer">
-                <div class="contactInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptates, illo perspiciatis adipisci quam repudiandae asperiores in aut soluta reiciendis.</p>
-                    <a href="mailto: gittyupgrace@gmail.com">gittyupgrace@gmail.com</a>
-                    <ul>
-                        <li><a href="https://twitter.com/gittyupgrace"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/gittyupgrace"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/grace-mccaffrey-39070b244/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="contactForm">
-                    <form action="#" method="POST" class="form" name="form">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" class="name" placeholder="Name">
-                        
-                        <label for="email" class="sr-only">Email address</label>
-                        <input type="email" id="email" class="email" placeholder="Email">
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h4>Contact</h4>
+                <div class="contactContainer">
+                    <div class="contactInfo">
+                        <p>If anything on this page is of interest to you, please reach out! I would love to hear from you!</p>
+                        <a href="mailto: gittyupgrace@gmail.com">gittyupgrace@gmail.com</a>
+                        <ul>
+                            <li><a href="https://twitter.com/gittyupgrace"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/gittyupgrace"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/grace-mccaffrey-39070b244/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contactForm">
+                        <form action="https://formsubmit.co/gittyupgrace@gmail.com" method="POST" class="form" name="form">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name" class="name" placeholder="Name">
+                            
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" name="email" id="email" class="email" placeholder="Email">
 
-                        <label for="message" class="sr-only">Message</label>
-                        <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-                        <button class="button submit">Submit</button>
-                    </form>
+                            <button class="button submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="wrapper">
-        <p>Made by<a href="https://github.com/gittyupgrace">gittyupgrace</a>at<a href="https://junocollege.com/">Juno College</a></p>
+    <footer>
+        <div class="wrapper">
+            <p>Made by<a href="https://github.com/gittyupgrace">gittyupgrace</a>at<a href="https://junocollege.com/">Juno College</a></p>
+        </div>
     </footer>
 
     <script src="./script.js"></script>

@@ -14,10 +14,16 @@ nav {
         ul {
             display: flex;
             align-items: flex-end;
+            transition: 0.3s;
 
             li {
                 margin-left: 25px;
                 margin-bottom: 10px;
+
+                & a:hover,
+                & a:focus {
+                    transform: scale(1.2);
+                }
             }
         }
     }

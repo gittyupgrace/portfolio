@@ -49,6 +49,7 @@ app.displaySkills = () => {
         const skillsListItem = document.createElement('li');
 
         const skillsIcon = document.createElement('i');
+        skillsIcon.setAttribute('aria-hidden', 'true');
 
         skill.icon.forEach((iconClass) => {
             skillsIcon.classList.add('icon');
@@ -66,43 +67,43 @@ app.displaySkills = () => {
 
 app.projects = [
     {
-        title: 'Postcards from Ron',
-        image: './assets/mockupTestImg.png',
-        alt: 'this is alt text placeholder',
+        title: 'Sophie',
+        image: './assets/sophieBlog.png',
+        alt: `A screenshot of the homepage of Sophie's blog, featuring a header that reads 'it's all about Sophie' and a portrait of Sophie holding up two orange slices in front of her eyes.`,
+        tools: ['html', 'css', 'scss'],
+        description: 'Sophie is a fully responsive, multi-page blog website created entirely from a set of client PSD design files.',
+        links: [
+            {
+                title: 'View Live',
+                href: 'https://precious-axolotl-e96632.netlify.app/'
+            },
+            {
+                title: 'View Code',
+                href: 'https://github.com/gittyupgrace/sophie-psd-conversion.git'
+            }]
+    },
+    {
+        title: 'HarHar! A Dad Joke Generator',
+        image: './assets/harHarDadJokes.png',
+        alt: 'A screenshot of the dad joke generator displaying a dad joke, dad gif and beer mug shaped button which generates a joke-gif combo for the user when clicked.',
         tools: ['html', 'css', 'js'], 
-        description: `Postcards from Ron is an app that pulls data from two separate API's to create a charming and giggle-inducing visual experience for fans of the character Ron Swanson from TV show Parks and Recreation.`, 
+        description: `HarHar! A Dad Joke Generator is an app that pulls data from two separate API's to create a hilarious and groan-inducing visual experience for fans of dad jokes.`, 
         links: [
             {
                 title: 'View Live', 
-                href: 'url'
+                href: 'https://bejewelled-taffy-5fceea.netlify.app/'
             }, 
             {
                 title: 'View Code',
-                href: 'https://github.com/gittyupgrace/postcards-from-ron'
+                href: 'https://github.com/har-har-dad-jokes/harHarDadJokes.git'
             }]
     },
     {
         title: 'Block Party: A Quiz About Quilts',
-        image: './assets/mockupTestImg.png', 
+        image: './assets/projectImgPlaceholder.png', 
         alt: '', 
         tools: ['html', 'css', 'js'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus ipsam eveniet ex quasi unde laboriosam numquam minus soluta voluptates?',
-        links: [
-            {
-                title: 'View Live',
-                href: 'url'
-            },
-            {
-                title: 'View Code',
-                href: 'url'
-            }]
-    },
-    {
-        title: 'Sophie',
-        image: './assets/mockupTestImg.png', 
-        alt: '', 
-        tools: ['html', 'css', 'js'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus ipsam eveniet ex quasi unde laboriosam numquam minus soluta voluptates?',
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus ipsam eveniet ex quasi unde laboriosam numquam minus soluta voluptates?`,
         links: [
             {
                 title: 'View Live',
@@ -115,10 +116,10 @@ app.projects = [
     },
     {
         title: 'React Project',
-        image: './assets/mockupTestImg.png',
+        image: './assets/projectImgPlaceholder.png',
         alt: '', 
         tools: ['html', 'css', 'react'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus ipsam eveniet ex quasi unde laboriosam numquam minus soluta voluptates?',
+        description: `This is a placeholder for the eventual description of a completed bootcamp react project!`,
         links: [
             {
                 title: 'View Live',

@@ -64,8 +64,8 @@ header {
 }
 
 h4 {
-    @include fontSize(45);
-    margin-bottom: 40px;
+    @include fontSize(60);
+    margin-bottom: 20px;
 }
 
 h5 {
@@ -113,4 +113,8 @@ button {
     font-weight: bold;
     color: $bodyText;
     @include fontSize(25);
+}
+
+footer {
+    color: $bodyText;
 }

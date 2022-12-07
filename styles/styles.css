@@ -241,7 +241,7 @@ body {
 }
 
 .skipLink {
-  background-color: #f0fd71;
+  background-color: #ffd482;
   color: #0348C9;
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
@@ -261,7 +261,7 @@ body {
 }
 
 section {
-  padding-top: 150px;
+  padding: 50px 0 50px;
 }
 
 img {
@@ -364,13 +364,13 @@ header a {
   color: #0348C9;
   font-style: italic;
   font-weight: bold;
-  background-color: #f0fd71;
+  background-color: #ffd482;
 }
 
 h4 {
-  font-size: 45px;
-  font-size: 2.25rem;
-  margin-bottom: 40px;
+  font-size: 60px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 h5 {
@@ -456,6 +456,10 @@ button {
   font-size: 1.25rem;
 }
 
+footer {
+  color: #0348C9;
+}
+
 nav {
   background-color: rgba(252, 248, 248, 0.5);
   position: fixed;
@@ -481,13 +485,19 @@ nav .navBar ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 nav .navBar ul li {
   margin-left: 25px;
   margin-bottom: 10px;
 }
+nav .navBar ul li a:hover, nav .navBar ul li a:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 nav .contactLink a {
-  background-color: #f0fd71;
+  background-color: #ffd482;
   padding: 20px 20px 10px 20px;
   border-radius: 500px 500px 0 0;
   margin-top: 10px;
@@ -501,7 +511,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../assets/headerImage.jpg);
+  background-image: url(../assets/headerImage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -519,6 +529,7 @@ header .headerContent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 100px;
 }
 .about div {
   width: calc(50% - 60px);
@@ -535,7 +546,10 @@ header .headerContent ul {
   margin-left: 30px;
 }
 
-.skillsList {
+.skills {
+  background-color: #f1f9f9;
+}
+.skills .skillsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +559,7 @@ header .headerContent ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.skillsList li {
+.skills .skillsList li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,9 +571,10 @@ header .headerContent ul {
   text-align: center;
   padding: 20px;
 }
-.skillsList li .icon {
+.skills .skillsList li .icon {
   font-size: 60px;
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .work .projectContainer {
@@ -586,9 +601,12 @@ header .headerContent ul {
 }
 .work .projectContainer ul a {
   padding: 5px;
-  background-color: #f0fd71;
+  background-color: #ffd482;
 }
 
+.contact {
+  background-color: #f1f9f9;
+}
 .contact .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,9 +627,15 @@ header .headerContent ul {
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .contact .contactContainer .contactInfo ul li {
   margin-right: 10px;
+}
+.contact .contactContainer .contactInfo ul li a:hover, .contact .contactContainer .contactInfo ul li a:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .contact .contactContainer .contactForm {
   margin-left: 20px;
@@ -630,8 +654,6 @@ header .headerContent ul {
           flex-direction: column;
   opacity: 0.7;
   width: 100%;
-  -webkit-box-shadow: 2px 2px 2px #0348C9;
-          box-shadow: 2px 2px 2px #0348C9;
 }
 .contact .contactContainer form input,
 .contact .contactContainer form textarea,
@@ -649,10 +671,10 @@ header .headerContent ul {
   border-top: 2px dotted #0348C9;
 }
 
-footer {
-  padding-top: 100px;
-  padding-bottom: 10px;
-}
 footer p {
   text-align: center;
+  margin-bottom: 0;
+}
+footer p a:hover, footer p a:focus {
+  font-weight: bold;
 }
