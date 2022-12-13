@@ -241,7 +241,7 @@ body {
 }
 
 .skipLink {
-  background-color: #ffd482;
+  background-color: #fcf8d9;
   color: #0348C9;
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
@@ -261,7 +261,7 @@ body {
 }
 
 section {
-  padding: 50px 0 50px;
+  padding: 80px 0;
 }
 
 img {
@@ -338,17 +338,21 @@ nav ul {
   font-weight: bold;
   letter-spacing: 1px;
 }
+nav .mobileMenuButton {
+  font-size: 36px;
+  font-size: 1.8rem;
+}
 
 header {
   color: #ffffff;
 }
 header h2 {
-  font-size: 82px;
-  font-size: 4.1rem;
+  font-size: 94px;
+  font-size: 4.7rem;
   margin-bottom: 0;
-  font-family: "DM Sans", sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-align: right;
 }
 header h3 {
   font-size: 24px;
@@ -370,13 +374,13 @@ header a {
 h4 {
   font-size: 60px;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 
 h5 {
   font-size: 35px;
   font-size: 1.75rem;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 p {
@@ -469,6 +473,7 @@ nav {
           transform: translate(-50%, -50%);
   width: 100%;
   z-index: 10;
+  padding: 30px 0 10px;
 }
 nav .navBar {
   display: -webkit-box;
@@ -477,6 +482,9 @@ nav .navBar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+nav .navBar .mobileMenuButton {
+  display: none;
 }
 nav .navBar ul {
   display: -webkit-box;
@@ -493,14 +501,18 @@ nav .navBar ul li {
   margin-bottom: 10px;
 }
 nav .navBar ul li a:hover, nav .navBar ul li a:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 nav .contactLink a {
-  background-color: #ffd482;
-  padding: 20px 20px 10px 20px;
+  background-color: #fcf8d9;
+  padding: 20px 15px 8px 15px;
   border-radius: 500px 500px 0 0;
-  margin-top: 10px;
+  border: 3px solid #0348C9;
+}
+nav .contactLink a:hover, nav .contactLink a:focus {
+  color: #ffffff;
+  background-color: #0348C9;
 }
 
 header {
@@ -511,7 +523,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../assets/headerImage.png);
+  background-image: url(../assets/headerImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -547,7 +559,7 @@ header .headerContent ul {
 }
 
 .skills {
-  background-color: #f1f9f9;
+  background-color: #fcf8d9;
 }
 .skills .skillsList {
   display: -webkit-box;
@@ -581,15 +593,19 @@ header .headerContent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
 }
 .work .projectContainer div {
-  width: calc(50% - 40px);
+  width: calc(50% - 60px);
 }
 .work .projectContainer .projectImage {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .work .projectContainer .projectContent {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .work .projectContainer ul {
   display: -webkit-box;
@@ -598,14 +614,22 @@ header .headerContent ul {
 }
 .work .projectContainer ul li {
   margin-right: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .work .projectContainer ul a {
+  color: #0348C9;
   padding: 5px;
-  background-color: #ffd482;
+  background-color: #fcf8d9;
+  border: 3px solid #0348C9;
+}
+.work .projectContainer ul a:hover, .work .projectContainer ul a:focus {
+  color: #ffffff;
+  background-color: #0348C9;
 }
 
 .contact {
-  background-color: #f1f9f9;
+  background-color: #fcf8d9;
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -613,10 +637,10 @@ header .headerContent ul {
   display: flex;
 }
 .contact .contactContainer div {
-  width: calc(50% - 40px);
+  width: calc(50% - 60px);
 }
 .contact .contactContainer .contactInfo {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .contact .contactContainer .contactInfo p {
   margin-bottom: 50px;
@@ -638,11 +662,7 @@ header .headerContent ul {
           transform: scale(1.2);
 }
 .contact .contactContainer .contactForm {
-  margin-left: 20px;
-  background-image: url(../assets/contactImage.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-left: 30px;
 }
 .contact .contactContainer form {
   display: -webkit-box;
@@ -654,6 +674,7 @@ header .headerContent ul {
           flex-direction: column;
   opacity: 0.7;
   width: 100%;
+  border: 3px solid #0348C9;
 }
 .contact .contactContainer form input,
 .contact .contactContainer form textarea,
@@ -671,10 +692,101 @@ header .headerContent ul {
   border-top: 2px dotted #0348C9;
 }
 
+footer {
+  background-color: #fcf8d9;
+}
 footer p {
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
 }
 footer p a:hover, footer p a:focus {
   font-weight: bold;
+}
+
+@media (max-width: 1008px) {
+  nav .navBar {
+    position: relative;
+  }
+  nav .navBar h1 {
+    width: 100%;
+  }
+  nav .navBar .mobileMenuButton {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    z-index: 100;
+  }
+  nav .navBar ul {
+    visibility: hidden;
+    position: absolute;
+    top: -100%;
+    right: -30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 35%;
+    padding: 80px 65px 40px;
+    border: 3px solid #0348C9;
+    background-color: #fcf8d9;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  nav .navBar ul li {
+    margin: 10px;
+  }
+  nav .navBar .showMenu {
+    visibility: visible;
+    top: 60px;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+  }
+  .header {
+    min-height: 75vh;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about div {
+    width: 90%;
+  }
+  .about .aboutImage {
+    margin-right: 0;
+  }
+  .about .aboutContent {
+    margin-left: 0;
+  }
+  .contact .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contactContainer div {
+    width: 90%;
+  }
+  .contact .contactContainer .contactInfo {
+    margin-right: 0;
+  }
+  .contact .contactContainer .contactForm {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }

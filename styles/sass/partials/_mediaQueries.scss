@@ -1,0 +1,87 @@
+@media (max-width: 1008px) {
+    nav {
+        .navBar {
+            position: relative;
+
+            h1 {
+                width: 100%;
+            }
+
+            .mobileMenuButton {
+                display: block;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                align-self: flex-end;
+                background-color: transparent;
+                border: none;
+                z-index: 100;
+            }
+
+            ul {
+                visibility: hidden;
+                position: absolute;
+                top: -100%;
+                right: -30px;
+                flex-direction: column;
+                align-items: center;
+                min-width: 35%;
+                padding: 80px 65px 40px;
+                border: 3px solid $bodyText;
+                background-color: $secondaryBackground;
+                transition: 0.3s ease-in;
+
+                li {
+                    margin: 10px;
+                }
+            }
+
+            .showMenu {
+                visibility: visible;
+                top: 60px;
+                transition: 0.3s ease-out;
+            }
+        }
+    }
+
+    .header {
+        min-height: 75vh;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 90%;
+        }
+
+        .aboutImage {
+            margin-right: 0;
+        }
+
+        .aboutContent {
+            margin-left: 0;
+        }
+    }
+
+    .contact {
+        .contactContainer {
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 90%;
+            }
+
+            .contactInfo {
+                margin-right: 0;
+            }
+
+            .contactForm {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}

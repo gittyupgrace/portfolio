@@ -6,10 +6,15 @@ nav {
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 10;
+    padding: 30px 0 10px;
 
     .navBar {
         display: flex;
         justify-content: space-between;
+
+        .mobileMenuButton {
+                display: none;
+            }
         
         ul {
             display: flex;
@@ -20,20 +25,29 @@ nav {
                 margin-left: 25px;
                 margin-bottom: 10px;
 
-                & a:hover,
-                & a:focus {
-                    transform: scale(1.2);
+                a {
+                    &:hover,
+                    &:focus {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
     }
 
-    .contactLink {
+    .contactLink {  
+
         a {
-            background-color: $primaryAccent;
-            padding: 20px 20px 10px 20px;
+            background-color: $secondaryBackground;
+            padding: 20px 15px 8px 15px;
             border-radius: 500px 500px 0 0;
-            margin-top: 10px;
+            border: 3px solid $bodyText;
+
+            &:hover,
+            &:focus {
+                color: $headerText;
+                background-color: $bodyText;
+            }
         }
     }
 } 

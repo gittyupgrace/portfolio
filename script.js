@@ -196,9 +196,30 @@ app.displayProjects = () => {
     });
 };
 
+
+//Hamburger Menu Functionality
+
+//retrieve hamburger menu button and navBar menu from DOM
+app.toggleMenuButton = document.getElementById('toggleMenuButton');
+app.navBarMenu = document.getElementById('navBarMenu')
+
+//create a function to add .showMenu class to navBarMenu which toggles visibility from hidden to visible
+app.addShowMenuClass = () => {
+    app.navBarMenu.classList.toggle('showMenu');
+}
+
+//create a click event for toggleMenuButton that calls addShowMenuClass function
+app.toggleEvent = () => {
+    app.toggleMenuButton.addEventListener('click', app.addShowMenuClass);
+}
+
+
+
+
 app.init = () => {
     app.displaySkills();
     app.displayProjects();
+    app.toggleEvent();
 }
 
 app.init();

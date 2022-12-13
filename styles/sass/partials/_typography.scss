@@ -33,18 +33,22 @@ nav {
         font-weight: bold;
         letter-spacing: 1px;
     }
+
+    .mobileMenuButton {
+        @include fontSize(36);
+    }
 }
 
 header {
     color: $headerText;
 
     h2 {
-        @include fontSize(82);
+        @include fontSize(94);
         margin-bottom: 0;
-        font-family: $bodyFont;
         font-weight: normal;
         letter-spacing: 1px;
-    }
+        text-align: right;
+    } 
 
     h3 {
         @include fontSize(24);
@@ -65,12 +69,12 @@ header {
 
 h4 {
     @include fontSize(60);
-    margin-bottom: 20px;
+    margin: 40px 0;
 }
 
 h5 {
     @include fontSize(35);
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 p {

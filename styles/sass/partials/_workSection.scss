@@ -1,17 +1,19 @@
 .work {
     .projectContainer {
         display: flex;
+        align-items: center;
+        padding: 40px 0;
         
         div {
-            width: calc(50% - 40px);
+            width: calc(50% - 60px);
         }
         
         .projectImage {
-            margin-right: 20px;
+            margin-right: 30px;
         }
         
         .projectContent {
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         ul {
@@ -19,11 +21,20 @@
             
             li {
                 margin-right: 10px;
+                transition: 0.3s;
             }
             
             a {
+                color: $bodyText;
                 padding: 5px;
-                background-color: $primaryAccent;
+                background-color: $secondaryBackground;
+                border: 3px solid $bodyText;
+
+                &:hover, 
+                &:focus{
+                    color: $headerText;
+                    background-color: $bodyText;
+                }
             }
         }
     }
