@@ -236,13 +236,13 @@ html {
 }
 
 body {
-  color: #0348C9;
-  background-color: #FCF8F8;
+  color: #033dab;
+  background-color: #fcf8f8;
 }
 
 .skipLink {
-  background-color: #fcf8d9;
-  color: #0348C9;
+  background-color: #eee2ee;
+  color: #033dab;
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
   font-size: 1rem;
@@ -332,7 +332,7 @@ nav h1 {
   font-size: 48px;
   font-size: 2.4rem;
   margin-top: 75px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 nav ul {
   font-weight: bold;
@@ -361,14 +361,6 @@ header h3 {
   margin-top: 3px;
   text-transform: uppercase;
   text-align: right;
-}
-header a {
-  font-size: 20px;
-  font-size: 1rem;
-  color: #0348C9;
-  font-style: italic;
-  font-weight: bold;
-  background-color: #ffd482;
 }
 
 h4 {
@@ -403,7 +395,7 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: #0348C9;
+  color: #033dab;
   font-weight: bold;
   opacity: 1;
   font-size: 16px;
@@ -412,7 +404,7 @@ p {
 }
 
 ::-moz-placeholder {
-  color: #0348C9;
+  color: #033dab;
   font-weight: bold;
   opacity: 1;
   font-size: 16px;
@@ -421,7 +413,7 @@ p {
 }
 
 :-ms-input-placeholder {
-  color: #0348C9;
+  color: #033dab;
   font-weight: bold;
   opacity: 1;
   font-size: 16px;
@@ -430,7 +422,7 @@ p {
 }
 
 ::-ms-input-placeholder {
-  color: #0348C9;
+  color: #033dab;
   font-weight: bold;
   opacity: 1;
   font-size: 16px;
@@ -439,7 +431,7 @@ p {
 }
 
 ::placeholder {
-  color: #0348C9;
+  color: #033dab;
   font-weight: bold;
   opacity: 1;
   font-size: 16px;
@@ -450,22 +442,22 @@ p {
 input,
 textarea {
   font-family: "DM Sans", sans-serif;
-  color: #0348C9;
+  color: #033dab;
 }
 
 button {
   font-weight: bold;
-  color: #0348C9;
+  color: #033dab;
   font-size: 25px;
   font-size: 1.25rem;
 }
 
 footer {
-  color: #0348C9;
+  color: #033dab;
 }
 
 nav {
-  background-color: rgba(252, 248, 248, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 0;
   left: 50%;
@@ -505,14 +497,14 @@ nav .navBar ul li a:hover, nav .navBar ul li a:focus {
           transform: scale(1.1);
 }
 nav .contactLink a {
-  background-color: #fcf8d9;
+  background-color: #eee2ee;
   padding: 20px 15px 8px 15px;
   border-radius: 500px 500px 0 0;
-  border: 3px solid #0348C9;
+  border: 3px solid #033dab;
 }
 nav .contactLink a:hover, nav .contactLink a:focus {
   color: #ffffff;
-  background-color: #0348C9;
+  background-color: #033dab;
 }
 
 header {
@@ -559,7 +551,7 @@ header .headerContent ul {
 }
 
 .skills {
-  background-color: #fcf8d9;
+  background-color: #eee2ee;
 }
 .skills .skillsList {
   display: -webkit-box;
@@ -618,18 +610,18 @@ header .headerContent ul {
   transition: 0.3s;
 }
 .work .projectContainer ul a {
-  color: #0348C9;
+  color: #033dab;
   padding: 5px;
-  background-color: #fcf8d9;
-  border: 3px solid #0348C9;
+  background-color: #eee2ee;
+  border: 3px solid #033dab;
 }
 .work .projectContainer ul a:hover, .work .projectContainer ul a:focus {
   color: #ffffff;
-  background-color: #0348C9;
+  background-color: #033dab;
 }
 
 .contact {
-  background-color: #fcf8d9;
+  background-color: #eee2ee;
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -674,7 +666,7 @@ header .headerContent ul {
           flex-direction: column;
   opacity: 0.7;
   width: 100%;
-  border: 3px solid #0348C9;
+  border: 3px solid #033dab;
 }
 .contact .contactContainer form input,
 .contact .contactContainer form textarea,
@@ -683,17 +675,17 @@ header .headerContent ul {
   padding: 15px;
 }
 .contact .contactContainer form input {
-  border-bottom: 2px solid #0348C9;
+  border-bottom: 2px solid #033dab;
 }
 .contact .contactContainer form textarea {
   resize: none;
 }
 .contact .contactContainer form .submit {
-  border-top: 2px dotted #0348C9;
+  border-top: 2px dotted #033dab;
 }
 
 footer {
-  background-color: #fcf8d9;
+  background-color: #eee2ee;
 }
 footer p {
   text-align: center;
@@ -735,8 +727,8 @@ footer p a:hover, footer p a:focus {
             align-items: center;
     min-width: 35%;
     padding: 80px 65px 40px;
-    border: 3px solid #0348C9;
-    background-color: #fcf8d9;
+    border: 3px solid #033dab;
+    background-color: #eee2ee;
     -webkit-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }

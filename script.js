@@ -99,22 +99,6 @@ app.projects = [
             }]
     },
     {
-        title: 'Block Party: A Quiz About Quilts',
-        image: './assets/projectImgPlaceholder.png', 
-        alt: '', 
-        tools: ['html', 'css', 'js'],
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus ipsam eveniet ex quasi unde laboriosam numquam minus soluta voluptates?`,
-        links: [
-            {
-                title: 'View Live',
-                href: 'url'
-            },
-            {
-                title: 'View Code',
-                href: 'url'
-            }]
-    },
-    {
         title: 'React Project',
         image: './assets/projectImgPlaceholder.png',
         alt: '', 
@@ -150,8 +134,6 @@ app.displayProjects = () => {
         const projectContentContainer = document.createElement('div');
         projectContentContainer.classList.add('projectContent');
         projectListItem.appendChild(projectContentContainer);
-
-        console.log(projectListItem);
 
         //projectImageContainer div --> create img element, insert img src and alt text, append img element to imagecontainer div
         const image = document.createElement('img');
