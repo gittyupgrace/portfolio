@@ -21,8 +21,8 @@
             ul {
                 visibility: hidden;
                 position: absolute;
-                top: -100%;
-                right: -30px;
+                top: 60px;
+                right: -100%;
                 flex-direction: column;
                 align-items: center;
                 min-width: 35%;
@@ -37,9 +37,9 @@
             }
 
             .showMenu {
-                visibility: visible;
-                top: 60px;
+                right: -30px;
                 transition: 0.3s ease-out;
+                visibility: visible;
             }
         }
     }
@@ -81,6 +81,63 @@
             .contactForm {
                 margin-left: 0;
                 margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 880px) {
+    .work {
+        .projectContainer {
+            flex-direction: column;
+
+            div {
+                width: 90%;
+            }
+
+            .projectImage {
+                margin-right: 0;
+            }
+
+            .projectContent {
+                margin-left: 0;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    header {
+        background-position: left;
+
+        .headerContent {
+            ul {
+                right: 0;
+            }
+        }
+
+        h2 {
+            @include fontSize(60);
+            text-align: left;
+        }
+
+        h3 {
+            text-align: left;
+        }
+    }
+
+    .work {
+        .projectContent {
+            .linkList {
+                flex-direction: column;
+
+                a {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
             }
         }
     }

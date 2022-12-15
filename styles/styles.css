@@ -724,8 +724,8 @@ footer p a:hover, footer p a:focus {
   nav .navBar ul {
     visibility: hidden;
     position: absolute;
-    top: -100%;
-    right: -30px;
+    top: 60px;
+    right: -100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -744,10 +744,10 @@ footer p a:hover, footer p a:focus {
     margin: 10px;
   }
   nav .navBar .showMenu {
-    visibility: visible;
-    top: 60px;
+    right: -30px;
     -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
+    visibility: visible;
   }
   .header {
     min-height: 75vh;
@@ -788,5 +788,50 @@ footer p a:hover, footer p a:focus {
   .contact .contactContainer .contactForm {
     margin-left: 0;
     margin-top: 30px;
+  }
+}
+@media (max-width: 880px) {
+  .work .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .projectContainer div {
+    width: 90%;
+  }
+  .work .projectContainer .projectImage {
+    margin-right: 0;
+  }
+  .work .projectContainer .projectContent {
+    margin-left: 0;
+    padding: 30px;
+  }
+}
+@media (max-width: 630px) {
+  header {
+    background-position: left;
+  }
+  header .headerContent ul {
+    right: 0;
+  }
+  header h2 {
+    font-size: 60px;
+    font-size: 3rem;
+    text-align: left;
+  }
+  header h3 {
+    text-align: left;
+  }
+  .work .projectContent .linkList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .projectContent .linkList a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }

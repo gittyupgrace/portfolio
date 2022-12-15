@@ -179,6 +179,7 @@ app.displayProjects = () => {
         projectContentContainer.append(descriptionContainer);
 
         const linkList = document.createElement('ul');
+        linkList.classList.add('linkList');
         project.links.forEach((link) => {
             const linkListItem = document.createElement('li');
             const linkUrl = document.createElement('a');
