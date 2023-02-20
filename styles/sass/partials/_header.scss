@@ -1,19 +1,18 @@
 header {
     min-height: 100vh;
+    background-color: $secondaryBackground;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-image: url(../assets/headerImage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    
-    .headerContent {
-        position: relative;
 
-        ul {
-            position: absolute;
-            top: -130px;
-            right: 70px;
-        }
-    } 
+    .headerImg {
+        width: 80%;
+        min-height: 100vh;
+        background-image: url(../assets/headerImage.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+       
+    }
+    
 }

@@ -40,22 +40,30 @@ nav {
 }
 
 header {
-    color: $headerText;
+    .headerTitle {
+        text-align: center;
+        padding: 0 30px;
+    }
 
     h2 {
-        @include fontSize(94);
+        @include fontSize(98);
         margin-bottom: 0;
-        font-weight: normal;
-        letter-spacing: 1px;
-        text-align: right;
-    } 
+    }
 
     h3 {
-        @include fontSize(24);
+        @include fontSize(92);
+        margin-top: 0;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    } 
+
+    h4 {
+        @include fontSize(34);
+        font-family: $bodyFont;
         letter-spacing: 2px;
         margin-top: 3px;
         text-transform: uppercase;
-        text-align: right;
     }
 }
 
@@ -113,4 +121,6 @@ button {
 
 footer {
     color: $bodyText;
+    font-family: $bodyFont;
+    @include fontSize(16);
 }

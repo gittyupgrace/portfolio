@@ -343,24 +343,30 @@ nav .mobileMenuButton {
   font-size: 1.8rem;
 }
 
-header {
-  color: #ffffff;
+header .headerTitle {
+  text-align: center;
+  padding: 0 30px;
 }
 header h2 {
-  font-size: 94px;
-  font-size: 4.7rem;
+  font-size: 98px;
+  font-size: 4.9rem;
   margin-bottom: 0;
-  font-weight: normal;
-  letter-spacing: 1px;
-  text-align: right;
 }
 header h3 {
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 92px;
+  font-size: 4.6rem;
+  margin-top: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+header h4 {
+  font-size: 34px;
+  font-size: 1.7rem;
+  font-family: "DM Sans", sans-serif;
   letter-spacing: 2px;
   margin-top: 3px;
   text-transform: uppercase;
-  text-align: right;
 }
 
 h4 {
@@ -454,6 +460,9 @@ button {
 
 footer {
   color: #033dab;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-size: 0.8rem;
 }
 
 nav {
@@ -509,24 +518,24 @@ nav .contactLink a:hover, nav .contactLink a:focus {
 
 header {
   min-height: 100vh;
+  background-color: #eee2ee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .headerImg {
+  width: 80%;
+  min-height: 100vh;
   background-image: url(../assets/headerImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
-}
-header .headerContent {
-  position: relative;
-}
-header .headerContent ul {
-  position: absolute;
-  top: -130px;
-  right: 70px;
+  background-position: center;
 }
 
 .about {
@@ -636,7 +645,7 @@ header .headerContent ul {
 }
 .contact .contactContainer .contactInfo p {
   margin-bottom: 50px;
-  padding-right: 20px;
+  padding: 10px;
 }
 .contact .contactContainer .contactInfo ul {
   display: -webkit-box;
