@@ -1,14 +1,16 @@
 footer {
-    background-color: $secondaryBackground;
+    background-color: $bodyText;
     
     p {
         text-align: center;
         margin: 0;
 
         a {
+            padding: 10px 3px;
+
             &:hover, 
             &:focus {
-                font-weight: bold;
+                text-decoration: underline;
             }
         }
     }

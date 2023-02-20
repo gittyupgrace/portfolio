@@ -459,7 +459,7 @@ button {
 }
 
 footer {
-  color: #033dab;
+  color: #eee2ee;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-size: 0.8rem;
@@ -542,7 +542,7 @@ header .headerImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
+  padding: 150px 0;
 }
 .about div {
   width: calc(50% - 60px);
@@ -645,7 +645,8 @@ header .headerImg {
 }
 .contact .contactContainer .contactInfo p {
   margin-bottom: 50px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 .contact .contactContainer .contactInfo ul {
   display: -webkit-box;
@@ -694,14 +695,17 @@ header .headerImg {
 }
 
 footer {
-  background-color: #eee2ee;
+  background-color: #033dab;
 }
 footer p {
   text-align: center;
   margin: 0;
 }
+footer p a {
+  padding: 10px 3px;
+}
 footer p a:hover, footer p a:focus {
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media (max-width: 1008px) {
@@ -710,6 +714,9 @@ footer p a:hover, footer p a:focus {
   }
   nav .navBar h1 {
     width: 100%;
+  }
+  nav .navBar h1 a {
+    padding: 0;
   }
   nav .navBar .mobileMenuButton {
     display: block;
@@ -750,8 +757,9 @@ footer p a:hover, footer p a:focus {
     transition: 0.3s ease-out;
     visibility: visible;
   }
-  .header {
-    min-height: 75vh;
+  header h3 {
+    font-size: 79px;
+    font-size: 3.95rem;
   }
   .about {
     -webkit-box-orient: vertical;
@@ -781,7 +789,7 @@ footer p a:hover, footer p a:focus {
             align-items: center;
   }
   .contact .contactContainer div {
-    width: 90%;
+    width: 100%;
   }
   .contact .contactContainer .contactInfo {
     margin-right: 0;
@@ -792,6 +800,16 @@ footer p a:hover, footer p a:focus {
   }
 }
 @media (max-width: 880px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerImg {
+    width: 100%;
+    min-height: 75vh;
+  }
   .work .projectContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -810,19 +828,23 @@ footer p a:hover, footer p a:focus {
   }
 }
 @media (max-width: 630px) {
-  header {
-    background-position: left;
-  }
-  header .headerContent ul {
-    right: 0;
-  }
   header h2 {
     font-size: 60px;
     font-size: 3rem;
-    text-align: left;
   }
   header h3 {
-    text-align: left;
+    font-size: 45px;
+    font-size: 2.25rem;
+  }
+  header h4 {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  h4 {
+    text-align: center;
+  }
+  .work .projectContent {
+    padding: 30px 0;
   }
   .work .projectContent .linkList {
     -webkit-box-orient: vertical;
@@ -834,5 +856,9 @@ footer p a:hover, footer p a:focus {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+  }
+  footer p {
+    font-size: 14px;
+    font-size: 0.7rem;
   }
 }

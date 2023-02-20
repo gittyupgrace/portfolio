@@ -69,13 +69,13 @@ app.projects = [
     {
         title: 'Sophie',
         image: './assets/sophieBlog.png',
-        alt: `A screenshot of the homepage of Sophie's blog, featuring a header that reads 'it's all about Sophie' and a portrait of Sophie holding up two orange slices in front of her eyes.`,
-        tools: ['html', 'css', 'scss'],
+        alt: `A screenshot of the homepage of Sophie's blog, featuring a header that reads 'it's all about Sophie' and a portrait of Sophie posing in front of a blue sky.`,
+        tools: ['html', 'scss', 'js'],
         description: 'Sophie is a fully responsive, multi-page blog website created entirely from a set of client PSD design files.',
         links: [
             {
                 title: 'View Live',
-                href: 'https://precious-axolotl-e96632.netlify.app/'
+                href: 'https://sophie-conversion.gittyupgrace.com/'
             },
             {
                 title: 'View Code',
@@ -83,35 +83,35 @@ app.projects = [
             }]
     },
     {
-        title: 'HarHar! A Dad Joke Generator',
-        image: './assets/harHarDadJokes.png',
-        alt: 'A screenshot of the dad joke generator displaying a dad joke, dad gif and beer mug shaped button which generates a joke-gif combo for the user when clicked.',
+        title: 'Pearls from Ron',
+        image: './assets/pearlsFromRon.png',
+        alt: 'A screenshot of the landing page for the Ron Swanson quote generator.',
         tools: ['html', 'css', 'js'], 
-        description: `HarHar! A Dad Joke Generator is an app that pulls data from two separate API's to create a hilarious and groan-inducing visual experience for fans of dad jokes.`, 
+        description: `Pearls from Ron is an app that pulls data from two separate APIs to create a charming and giggle-inducing visual experience for fans of the character Ron Swanson from TV show Parks and Recreation. `, 
         links: [
             {
                 title: 'View Live', 
-                href: 'https://bejewelled-taffy-5fceea.netlify.app/'
+                href: 'https://pearls-from-ron.gittyupgrace.com/'
             }, 
             {
                 title: 'View Code',
-                href: 'https://github.com/har-har-dad-jokes/harHarDadJokes.git'
+                href: 'https://github.com/gittyupgrace/pearls-from-ron.git'
             }]
     },
     {
-        title: 'React Project',
-        image: './assets/projectImgPlaceholder.png',
-        alt: '', 
-        tools: ['html', 'css', 'react'],
-        description: `This is a placeholder for the eventual description of a completed bootcamp react project!`,
+        title: 'Rose Apothecary',
+        image: './assets/roseApothecary.png',
+        alt: 'A screenshot of the homepage for the Rose Apothecary e-commerce store.', 
+        tools: ['react', 'firebase'],
+        description: `An e-commerce environment for Rose Apothecary, the fictional general store from TV show Schitt's Creek, built using React and Firebase.`,
         links: [
             {
                 title: 'View Live',
-                href: 'url'
+                href: 'https://rose-apothecary.gittyupgrace.com/'
             },
             {
                 title: 'View Code',
-                href: 'url'
+                href: 'https://github.com/gittyupgrace/rose-apothecary.git'
             }]
     },
 ]

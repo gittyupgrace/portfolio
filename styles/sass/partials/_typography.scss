@@ -120,7 +120,7 @@ button {
 }
 
 footer {
-    color: $bodyText;
+    color: $secondaryBackground;
     font-family: $bodyFont;
     @include fontSize(16);
 }
