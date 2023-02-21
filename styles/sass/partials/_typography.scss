@@ -22,6 +22,17 @@ nav ul,
     text-transform: uppercase;
 }
 
+h4 {
+    @include fontSize(68);
+    margin: 40px 0;
+    text-decoration: underline wavy;
+}
+
+h5 {
+    @include fontSize(44);
+    margin: 5px 0;
+}
+
 nav {
     h1 {
         @include fontSize(48);
@@ -64,17 +75,8 @@ header {
         letter-spacing: 2px;
         margin-top: 3px;
         text-transform: uppercase;
+        text-decoration: none;
     }
-}
-
-h4 {
-    @include fontSize(60);
-    margin: 40px 0;
-}
-
-h5 {
-    @include fontSize(35);
-    margin: 5px 0;
 }
 
 p {
@@ -83,7 +85,7 @@ p {
 
 .projectContent {
     li {
-        @include fontSize(16);
+        @include fontSize(18);
         font-weight: bold;
         letter-spacing: 1px;
     }
