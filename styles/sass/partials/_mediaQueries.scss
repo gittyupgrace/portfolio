@@ -183,6 +183,12 @@
         }
     }
 
+    .contact {
+        h4 {
+            text-align: left;
+        }
+    }
+
     footer {
         p {
             @include fontSize(14);

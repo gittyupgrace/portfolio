@@ -23,9 +23,8 @@ nav ul,
 }
 
 h4 {
-    @include fontSize(68);
+    @include fontSize(92);
     margin: 40px 0;
-    text-decoration: underline wavy;
 }
 
 h5 {

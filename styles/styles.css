@@ -329,11 +329,9 @@ nav ul,
 }
 
 h4 {
-  font-size: 68px;
-  font-size: 3.4rem;
+  font-size: 92px;
+  font-size: 4.6rem;
   margin: 40px 0;
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
 }
 
 h5 {
@@ -609,6 +607,12 @@ header .headerImg {
   margin-bottom: 10px;
 }
 
+.work h4 {
+  margin-bottom: 0;
+}
+.work p {
+  margin-bottom: 40px;
+}
 .work .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,7 +647,7 @@ header .headerImg {
 }
 .work .projectContainer ul a {
   color: #033dab;
-  padding: 5px;
+  padding: 10px;
   background-color: #eee2ee;
   border: 3px solid #033dab;
 }
@@ -904,6 +908,9 @@ footer p a:hover, footer p a:focus {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+  }
+  .contact h4 {
+    text-align: left;
   }
   footer p {
     font-size: 14px;

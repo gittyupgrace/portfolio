@@ -1,4 +1,12 @@
 .work {
+    h4 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
     .projectContainer {
         display: flex;
         align-items: center;
@@ -29,7 +37,7 @@
             
             a {
                 color: $bodyText;
-                padding: 5px;
+                padding: 10px;
                 background-color: $secondaryBackground;
                 border: 3px solid $bodyText;
 
