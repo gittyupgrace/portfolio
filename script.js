@@ -29,6 +29,10 @@ app.skills = [
         icon: ['fa-brands', 'fa-github']
     },
     {
+        name: 'Git',
+        icon: ['fa-brands', 'fa-square-git']
+    },
+    {
         name: 'Paired Programming',
         icon: ['fa-solid', 'fa-code-branch']
     },
@@ -86,7 +90,7 @@ app.projects = [
         title: 'Pearls from Ron',
         image: './assets/pearlsFromRon.png',
         alt: 'A screenshot of the landing page for the Ron Swanson quote generator.',
-        tools: ['html', 'css', 'js'], 
+        tools: ['js', 'css', 'REST API'], 
         description: `Pearls from Ron is an app that pulls data from two separate APIs to create a charming and giggle-inducing visual experience for fans of the character Ron Swanson from TV show Parks and Recreation. `, 
         links: [
             {

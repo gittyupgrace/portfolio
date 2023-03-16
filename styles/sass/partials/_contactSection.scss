@@ -61,6 +61,10 @@
 
             .submit {
                 border-top: 2px dotted $bodyText;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

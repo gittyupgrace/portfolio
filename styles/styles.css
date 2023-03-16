@@ -720,6 +720,9 @@ header .headerImg {
 .contact .contactContainer form .submit {
   border-top: 2px dotted #033dab;
 }
+.contact .contactContainer form .submit:hover {
+  cursor: pointer;
+}
 
 footer {
   background-color: #033dab;
